@@ -1,2 +1,8 @@
-node_modules
+# Node modules
+node_modules/
+
+# Config file
+src/config.json
+
+# Environment variables
 .env
