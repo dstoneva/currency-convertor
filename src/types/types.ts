@@ -20,3 +20,11 @@ export type CurrencyCode = (typeof validCurrencyCodes)[number]
  * Array of valid ISO 4217 currency codes.
  */
 export const validCurrencyCodes: string[] = currencyCodes.codes()
+
+export interface ConversionRecord {
+  date: string
+  amount: number
+  base_currency: string
+  target_currency: string
+  converted_amount: number
+}
