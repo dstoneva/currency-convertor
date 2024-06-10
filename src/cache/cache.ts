@@ -30,5 +30,4 @@ export function setCachedRate(date: string, base: string, target: string, rate: 
     cache[date][base] = {}
   }
   cache[date][base][target] = parseFloat(rate.toFixed(6))
-  console.log(cache, 'cache')
 }

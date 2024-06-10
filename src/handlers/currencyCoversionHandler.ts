@@ -19,7 +19,6 @@ export async function convertCurrency(
 ): Promise<number> {
   let rate = getCachedRate(date, baseCurrency, targetCurrency)
   if (rate === undefined) {
-    console.log('RATE IS UNDEFINED')
     rate = await getExchangeRate(date, baseCurrency, targetCurrency)
     setCachedRate(date, baseCurrency, targetCurrency, rate)
   }
