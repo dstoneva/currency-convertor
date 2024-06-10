@@ -1,8 +1,6 @@
-# Node modules
+# Node artifact files
 node_modules/
+dist/
 
 # Config file
 src/config.json
-
-# Environment variables
-.env
